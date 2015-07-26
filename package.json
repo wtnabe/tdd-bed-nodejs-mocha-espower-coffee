@@ -1,8 +1,9 @@
 {
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "coffee-script": "*"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
   }
 }
