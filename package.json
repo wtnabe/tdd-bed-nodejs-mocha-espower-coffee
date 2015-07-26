@@ -1,9 +1,11 @@
 {
   "devDependencies": {
     "mocha": "*",
-    "coffee-script": "*"
+    "coffee-script": "*",
+    "power-assert": "*",
+    "espower-coffee": "*"
   },
   "scripts": {
-    "test": "mocha --reporter spec --compilers coffee:coffee-script/register"
+    "test": "mocha --reporter spec --require espower-coffee/guess --compilers coffee:coffee-script/register"
   }
 }
